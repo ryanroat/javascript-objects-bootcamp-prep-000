@@ -2,7 +2,12 @@ var playlist = new Object ();
 
 playlist["Bruce Springsteen"] = "Born in the USA";
 
-Function updatePlaylist(list, artist, title) {
-  list
+function updatePlaylist(list, artist, title) {
+  list[artist] = title;
+  
+  return list;
+}
+
+function removeFromPlaylist(list, artist) {
   
 }
